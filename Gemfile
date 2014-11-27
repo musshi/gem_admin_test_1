@@ -1,4 +1,8 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in gem_admin_test_1.gemspec
-gemspec
+group :development do
+  gem "shoulda", ">= 0"
+  gem "bundler", "~> 1.0"
+  gem "jeweler", "~> 2.0.1"
+  gem "simplecov", ">= 0"
+end
