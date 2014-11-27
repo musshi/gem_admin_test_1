@@ -1,5 +1,7 @@
-require "gem_admin_test_1/version"
-
+require 'rails'
 module GemAdminTest1
-  # Your code goes here...
+  
+  class Engine < Rails::Engine
+  end  
+
 end
