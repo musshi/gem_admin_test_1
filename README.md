@@ -15,6 +15,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install gem_admin_test_1
+    
+install generator of gem_admin_test
+
+    $ rails g gem_admin_test:install
 
 ## Usage
 
