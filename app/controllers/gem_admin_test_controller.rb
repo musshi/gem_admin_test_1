@@ -1,0 +1,2 @@
+class GemAdminTestController < ApplicationController
+end
