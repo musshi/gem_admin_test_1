@@ -1,0 +1,20 @@
+shared_settings: &shared_settings
+  project_name: "Configure me Musshi test gem"
+  login_footer: "Copyright 2014 &copy; Musshi Test Gem"
+  email_sender: "please-change-me@config-yml.com"
+
+development: &non_production_settings
+  <<: *shared_settings
+  domain: localhost:3000
+
+test:
+  <<: *non_production_settings
+  <<: *shared_settings
+
+staging:
+  <<: *non_production_settings
+  <<: *shared_settings
+
+production:
+  <<: *shared_settings
+  domain: production_url.com
