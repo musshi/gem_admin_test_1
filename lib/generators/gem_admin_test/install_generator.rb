@@ -10,19 +10,15 @@ module GemAdminTest
       class_option :orm
       
       def copy_menu_config_file
-        template "config.yml", "config/config.yml"
+        copy_file "config.yml", "config/config.yml"
       end
       
-      def remove_application_helper
-        remove_file 'app/helpers/application_helper.rb'
-      end
-      
-      def copy_application_helper
-        template "application_helper.rb", "app/helpers/application_helper.rb"
+      def copy_dashboard_helper
+        copy_file "dashboard_helper.rb", "app/helpers/dashboard_helper.rb"
       end
       
       def copy_view
-        template "dashboard.html.erb", "app/views/gem_admin_test/dashboard.html.erb"       
+        copy_file "dashboard.html.erb", "app/views/gem_admin_test/dashboard.html.erb"
       end    
       
       # def inject_javascript
