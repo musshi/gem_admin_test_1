@@ -13,6 +13,10 @@ module GemAdminTest
         # template "ants_admin.rb", "config/initializers/ants_admin.rb"
       end
       
+      def copy_helper
+        template "application_helper.rb", "app/helps/application_helper.rb"
+      end
+      
       def copy_view
         template "dashboard.html.erb", "app/views/gem_admin_test/dashboard.html.erb"
         
