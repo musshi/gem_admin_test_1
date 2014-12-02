@@ -11,12 +11,6 @@
 
 <section class="content">
   <div class="row">
-     <ul>
-        <% @menu.each do |item| %>
-           <li><a href="<%= item[:url] %>"><%= item[:text] %></a></li>
-        <% end %>
-     </ul>
-     
      
      <%= load_menu_helper([{url: "/admin/items", text: "Items 1"}, {url: "/admin/box", text: "Box 1"}, {url: "/admin/box", text: "Kaka"}]) %>
   </div>

@@ -1,7 +1,7 @@
 class GemAdminTestController < ApplicationController
   before_action :load_menu_gem
-  
+  include GemAdminTest::DashboardHelper
   def load_menu_gem
-    @menu = load_menu_project
+    @main_menu_admin = defined?(load_menu_project) ? load_menu_project : []
   end
 end

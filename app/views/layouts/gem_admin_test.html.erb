@@ -9,11 +9,7 @@
 <body>
 <h1>Menu</h1>
 
-<ul>
-   <% @menu.each do |item| %>
-      <li><a href="<%= item[:url] %>"><%= item[:text] %></a></li>
-   <% end %>
-</ul>
+   <%= load_menu_helper(@main_menu_admin) %>
 
 <%= yield %>
 

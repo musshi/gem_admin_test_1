@@ -14,7 +14,7 @@ module GemAdminTest
       end
       
       def copy_dashboard_helper
-        copy_file "dashboard_helper.rb", "app/helpers/dashboard_helper.rb"
+        # copy_file "dashboard_helper.rb", "app/helpers/dashboard_helper.rb"
       end
       
       def copy_view
