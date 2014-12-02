@@ -1,4 +1,4 @@
-module ApplicationHelper
+module DashBoardHelper
   def load_menu_helper(menu_data_array)
     html_li_array = []
     if menu_data_array
