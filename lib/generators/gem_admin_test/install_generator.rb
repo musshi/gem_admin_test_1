@@ -21,7 +21,7 @@ module GemAdminTest
       def insert_action_to_controller   
         inject_into_file 'app/controllers/application_controller.rb', after: "class ApplicationController < ActionController::Base\n" do <<-'RUBY'
           def load_menu_project
-            [{url: "/admin/items", text: "Items 1"}, {url: "/admin/box", text: "Box 1"}, {url: "/admin/box", text: "Kaka"}]
+            [{url: "/admin/items", text: "Model 1"}, {url: "/admin/box", text: "Model 2"}, {url: "/admin/box", text: "Model 3"}]
           end
           RUBY
         end
