@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Musshi Tran"]
-  s.date = "2014-12-01"
+  s.date = "2014-12-02"
   s.description = "Admin panel for you"
   s.email = "musshi@rubify.com"
   s.extra_rdoc_files = [
@@ -29,12 +29,15 @@ Gem::Specification.new do |s|
     "app/views/gem_admin_test/index.html.erb",
     "app/views/layouts/gem_admin_test.html.erb",
     "config/routes.rb",
+    "gem_admin_test.gemspec",
     "lib/gem_admin_test.rb",
     "lib/gem_admin_test/version.rb",
+    "lib/generators/.DS_Store",
     "lib/generators/gem_admin_test/install_generator.rb",
-    "lib/generators/templates/application_helper.rb",
+    "lib/generators/templates/.DS_Store",
     "lib/generators/templates/config.yml",
-    "lib/generators/templates/dashboard.html.erb"
+    "lib/generators/templates/dashboard.html.erb",
+    "lib/generators/templates/dashboard_helper.rb"
   ]
   s.homepage = "https://github.com/musshi/gem_admin_test"
   s.licenses = ["MIT"]
