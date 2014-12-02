@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "app/controllers/gem_admin_test/admin_controller.rb",
     "app/controllers/gem_admin_test_controller.rb",
+    "app/helpers/gem_admin_test/dashboard_helper.rb",
     "app/views/gem_admin_test/dashboard.html.erb",
     "app/views/gem_admin_test/index.html.erb",
     "app/views/layouts/gem_admin_test.html.erb",
@@ -36,8 +37,7 @@ Gem::Specification.new do |s|
     "lib/generators/gem_admin_test/install_generator.rb",
     "lib/generators/templates/.DS_Store",
     "lib/generators/templates/config.yml",
-    "lib/generators/templates/dashboard.html.erb",
-    "lib/generators/templates/dashboard_helper.rb"
+    "lib/generators/templates/dashboard.html.erb"
   ]
   s.homepage = "https://github.com/musshi/gem_admin_test"
   s.licenses = ["MIT"]
