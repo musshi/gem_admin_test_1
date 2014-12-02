@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "app/controllers/gem_admin_test_controller.rb",
     "app/helpers/gem_admin_test/dashboard_helper.rb",
     "app/views/gem_admin_test/dashboard.html.erb",
-    "app/views/gem_admin_test/index.html.erb",
+    "app/views/gem_admin_test/index_each_model.html.erb",
     "app/views/layouts/gem_admin_test.html.erb",
     "config/routes.rb",
     "gem_admin_test.gemspec",
