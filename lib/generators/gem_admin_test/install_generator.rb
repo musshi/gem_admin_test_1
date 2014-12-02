@@ -13,13 +13,19 @@ module GemAdminTest
         copy_file "config.yml", "config/config.yml"
       end
       
-      def copy_dashboard_helper
-        # copy_file "dashboard_helper.rb", "app/helpers/dashboard_helper.rb"
-      end
       
       def copy_view
         copy_file "dashboard.html.erb", "app/views/gem_admin_test/dashboard.html.erb"
-      end    
+      end 
+      
+      def insert_action_to_controller   
+        inject_into_file 'app/controllers/application_controller.rb', after: "class ApplicationController < ActionController::Base\n" do <<-'RUBY'
+          def load_menu_project
+            [{url: "/admin/items", text: "Items 1"}, {url: "/admin/box", text: "Box 1"}, {url: "/admin/box", text: "Kaka"}]
+          end
+          RUBY
+        end
+      end
       
       # def inject_javascript
         # append_to_file 'app/assets/javascripts/application.js' do
