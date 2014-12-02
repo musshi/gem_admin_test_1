@@ -1,4 +1,5 @@
 class GemAdminTestController < ApplicationController
+  
   before_action :load_menu_gem
   include GemAdminTest::DashboardHelper
   

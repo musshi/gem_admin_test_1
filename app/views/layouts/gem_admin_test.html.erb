@@ -7,13 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-   
-<h1>Menu</h1>
+  <div class="west-menu" style="width: 25%; float:left">   
+    <h1>Menu</h1>
+    <%= load_menu_helper(@main_menu_admin) %>
+  </div>
 
-   <%= load_menu_helper(@main_menu_admin) %>
-
-<%= yield %>
+  <%= yield %>
 
 </body>
 </html>
-<
