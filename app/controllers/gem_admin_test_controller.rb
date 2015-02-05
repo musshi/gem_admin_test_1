@@ -7,5 +7,6 @@ class GemAdminTestController < ApplicationController
     @main_menu_admin = defined?(load_menu_project) ? load_menu_project : []
   end
   
+      
   
 end
