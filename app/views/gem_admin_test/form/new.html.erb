@@ -1,0 +1,14 @@
+<section class="content-header">
+  <h1 style="padding-left:3%;">Create A New <%= @model_class %></h1>
+  <ol class="breadcrumb">
+    <li>
+      
+    </li>
+  </ol>
+</section>
+
+<section>
+  <div class="container-form">
+    <% render partial: "/gem_admin_test/#{@model_class.downcase.pluralize}/form" rescue render partial: "/gem_admin_test/form/form"%>
+  </div>  
+</section>

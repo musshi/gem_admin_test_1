@@ -33,6 +33,13 @@ module GemAdminTest
           # out << "//= require gem_admin_test/app"
         # end
       # end
+      
+      def inject_css
+        append_to_file 'app/assets/stylesheets/application.css' do
+          out = "\n"
+          out << "/* *= require admin_test/application_admin_test */"
+        end
+      end
 
       def rails_4?
         Rails::VERSION::MAJOR == 4

@@ -2,23 +2,27 @@
 <html>
 <head>
   <title>Admin Page</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'admin_test/application_admin_test', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="west-menu" style="width: 100%; float:left">   
     <h1 style="width:100%;">Menu</h1>
+    <div class="header-module col-md-12" style="width: 100%;">
+      <%= render :partial => "/layouts/areas/header" %>
+    </div>
     <div class="top-menu col-md-12"style="width: 100%;">
       <%= render :partial => "/layouts/details/menu_detail" %>
     </div>
-    <div>
-      <div class="left-bar-menu" style="width: 20%; float:left;">
+    <div style="min-height: 100%; width: 17%; float:left;">
+      <div class="left-bar-menu" style="width: 100%; float:left; height: 100%; background-color: gray;">
         <%= load_menu_helper(@main_menu_admin) %>
       </div>
-      <div style = "width: 70%; float:left;">
-        <%= yield %>
-      </div>
+      
+    </div>
+    <div style = "width: 70%; float:left;">
+      <%= yield %>
     </div>
   </div>
   

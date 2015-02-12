@@ -1,0 +1,15 @@
+<%= form_for @object, :url => @object.new_record? ? "/admin/#{@model_string.downcase}/" : "/admin/#{@model_string.downcase}/#{@object.id}", :html => {role: "form"} do |form| %>
+  <div class="box-body">
+    <% p form %>
+    <%= form.inputs do %>
+      <% @object.class.columns.each do |column| %>
+  			<% if ['id', 'created_at', 'updated_at', 'active'].index(column.name) == nil and column.name.match(/_id$/) == nil %>
+  				<%= form.input column.name.to_sym %>
+  			<% end %>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="box-footer">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
+<% end %>
